@@ -1,14 +1,13 @@
 let searchFun = async()=>{
-    try{
-       //let query = document.getElementById("query").value;
-       let res = await fetch(`https://fakestoreapi.com/products/`);
-       let data = await res.json();
+        try{
+        let res = await fetch(`https://fakestoreapi.com/products/`);
+        let data = await res.json();
 
-       append1(data);
-       console.log(data);
-    }catch(err){
-        console.log(err)
-    }
+        append1(data);
+        console.log(data);
+        }catch(err){
+            console.log(err)
+        }
 }
 
 let appendFun = (data)=>{

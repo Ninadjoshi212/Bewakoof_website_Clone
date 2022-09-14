@@ -689,7 +689,7 @@ aimgArrevent.forEach(function(ele){
 
 let userdata=JSON.parse(localStorage.getItem('user'));
 // console.log(userdata.username);
-if(userdata!=null){
+if(userdata!=null && userdata.username!=undefined){
 document.querySelector("#username").innerText=`Hi, ${userdata.username}`;
 document.querySelector('#signin').style.display="none"
 document.querySelector('#heart').style.display="none"
